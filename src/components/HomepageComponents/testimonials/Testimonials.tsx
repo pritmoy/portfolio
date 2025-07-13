@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { FaStar, FaQuoteRight } from "react-icons/fa";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -81,7 +82,7 @@ export default function Testimonials() {
                   “{testimonial.quote}”
                 </p>
                 <div className="flex items-center gap-4">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"

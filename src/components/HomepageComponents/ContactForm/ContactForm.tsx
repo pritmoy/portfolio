@@ -4,7 +4,6 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import MainContainer from "@/components/shared/Container/MainContainer";
 import {
   Accordion,
@@ -12,7 +11,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 
 export default function ContactFormSection() {
   return (

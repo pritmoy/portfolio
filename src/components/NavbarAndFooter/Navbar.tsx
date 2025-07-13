@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { LuMenu } from "react-icons/lu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,10 +14,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { FaRegUser } from "react-icons/fa6";
-// import { ThemeContext } from "@/components/context/ThemeContext";
-import { FaMoon } from "react-icons/fa";
-import { FiSun } from "react-icons/fi";
 import MainContainer from "../shared/Container/MainContainer";
 import { CiMail } from "react-icons/ci";
 import { TfiFacebook } from "react-icons/tfi";
@@ -189,7 +185,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="px-6 p-1 border rounded-md border-gray-700 text-black dark:text-white">
-                Let's Talk{" "}
+                {`Let's Talk`}{" "}
               </div>
             </div>
           </div>

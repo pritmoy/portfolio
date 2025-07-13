@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { FaUsers, FaUserTie, FaCodeBranch, FaTools } from "react-icons/fa";
-import { cn } from "@/lib/utils"; // if you use the cn util
 import MainContainer from "@/components/shared/Container/MainContainer";
 
 const stats = [

@@ -90,7 +90,7 @@ const ServiceSection = () => {
           }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
-        >
+        > 
           {services.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="p-5 rounded bg-gray-800 text-white h-32 flex flex-col items-center text-center shadow-md hover:shadow-lg transition-all duration-300">
