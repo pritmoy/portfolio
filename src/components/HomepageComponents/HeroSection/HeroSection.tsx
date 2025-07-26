@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Image src={Images.banner} alt="img" className="size-[400px]" />
+            <Image src={Images.banner2} alt="img" className="size-[400px]" />
           </div>
         </div>
       </MainContainer>

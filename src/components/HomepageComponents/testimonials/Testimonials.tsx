@@ -86,6 +86,7 @@ export default function Testimonials() {
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"
+                    width={500} height={500}
                   />
                   <div>
                     <h4 className="text-lg font-semibold text-black dark:text-white">

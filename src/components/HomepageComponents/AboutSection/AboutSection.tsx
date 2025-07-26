@@ -13,7 +13,7 @@ const progressItem = [
   },
   {
     title: "Web Analytics",
-    percentage: 60,
+    percentage: 85,
   },
   {
     title: "E-commerce SEO",

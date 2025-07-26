@@ -18,6 +18,7 @@ import MainContainer from "../shared/Container/MainContainer";
 import { CiMail } from "react-icons/ci";
 import { TfiFacebook } from "react-icons/tfi";
 import { FaYoutube, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 type NavItem = {
   id: number;
@@ -114,11 +115,15 @@ const Navbar = () => {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                  <div className="flex flex-col gap-6 py-6">
-                    <Link href="/" className="flex items-center">
-                      <h6 className="text-xl font-bold text-black dark:text-white">
-                        Pritmoy
-                      </h6>
+                  <div className="flex flex-col gap-3 py-6">
+                    <Link href="/" className="flex items-center px-3">
+                      <Image
+                        className="w-[120px]"
+                        src="/Logo.png"
+                        alt="img"
+                        width={500}
+                        height={500}
+                      />
                     </Link>
                     <nav className="flex flex-col space-y-1">
                       {navItems.map((item: NavItem) => (
@@ -143,9 +148,13 @@ const Navbar = () => {
 
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
-                <h6 className="text-xl font-bold text-black dark:text-white">
-                  Pritmoy
-                </h6>
+              <Image
+                        className="w-[120px]"
+                        src="/Logo.png"
+                        alt="img"
+                        width={500}
+                        height={500}
+                      />
               </Link>
             </div>
             <div className="hidden md:block">

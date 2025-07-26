@@ -3,11 +3,12 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import MainContainer from "../shared/Container/MainContainer";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer
-      className="bg-[#0B0E1C] text-white py-12 px-6 md:px-20"
+      className="bg-[#0B0E1C] text-white pt-12 px-6 md:px-20"
       style={{ background: "url(/footer.png)" }}
     >
       <MainContainer>
@@ -15,10 +16,13 @@ export default function Footer() {
           {/* Logo and Description */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                F
-              </div>
-              <h2 className="text-xl font-semibold">fallow</h2>
+              <Image
+                className="w-[180px]"
+                src="/Logo.png"
+                alt="img"
+                width={500}
+                height={500}
+              />
             </div>
             <p className="text-sm text-gray-400">
               We work with a passion of taking challenges and creating new ones
@@ -76,13 +80,13 @@ export default function Footer() {
             <div className="flex items-start gap-3 text-sm text-gray-300 mb-3">
               <FaMapMarkerAlt className="text-blue-400 mt-1" />
               <div>
-                30 Commercial Road Fratton, <br />
-                Australia
+                Khagrachari, Chittagong <br />
+                Bangladesh
               </div>
             </div>
             <div className="flex items-center gap-3 text-sm text-gray-300 mb-6">
               <FaPhoneAlt className="text-blue-400" />
-              <span>1-888-452-1505</span>
+              <span>+88016-5423789</span>
             </div>
 
             <h4 className="text-base font-semibold mb-2">
@@ -90,7 +94,12 @@ export default function Footer() {
             </h4>
           </div>
         </div>
-      </MainContainer>
+      </MainContainer>{" "}
+      <p className="text-center text-[12px] py-5">
+        {" "}
+        Copyright &#169; {new Date().getFullYear()} Pritmoy Sen Portfolio. All rights
+        reserved.
+      </p>
     </footer>
   );
 }
