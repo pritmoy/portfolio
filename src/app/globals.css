@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+body {
+  font-family: var(--font-intel-one);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -119,11 +124,10 @@
   }
 }
 
-
-.mySwiper{
+.mySwiper {
   padding-bottom: 50px !important;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 14px !important;
   height: 14px !important;
   background-color: rgb(7, 141, 243) !important;
@@ -135,7 +139,7 @@
     opacity: 1;
   }
   100% {
-    transform: scale(1.83); 
+    transform: scale(1.83);
     opacity: 0;
   }
 }
