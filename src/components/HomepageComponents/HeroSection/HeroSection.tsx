@@ -25,7 +25,7 @@ const HeroSection = () => {
   return (
     <div className="w-full px-3 relative">
       <MainContainer>
-        <div className="grid grid-cols-2 items-center py-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center py-8">
           <div>
             <p className="font-semibold text-[32px]">
               <span>Hey, I am</span>
@@ -51,7 +51,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="md:flex justify-center items-center hidden">
             <Image src={Images.banner2} alt="img" className="size-[400px]" />
           </div>
         </div>
@@ -60,7 +60,7 @@ const HeroSection = () => {
       {/* Fullscreen Video Overlay */}
       {showVideo && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex justify-center items-center">
-          <div className="relative w-[80vw] h-[80vh] rounded-2xl overflow-hidden shadow-2xl bg-black">
+          <div className="relative w-[80vw] md:h-[80vh] h-fit md:px-0 py-0 px-5 py-8 rounded-2xl overflow-hidden shadow-2xl bg-black">
             <button
               onClick={() => setShowVideo(false)}
               className="absolute top-3 right-3 z-10 text-white bg-black/60 hover:bg-black/80 p-1 rounded-full cursor-pointer"
